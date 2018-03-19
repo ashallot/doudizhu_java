@@ -1,0 +1,37 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.game.doudizhu.user.UserProperties",
+      "name": "user",
+      "type": "com.game.doudizhu.user.UserProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.game.doudizhu.user.UserProperties",
+      "name": "user.core",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.game.doudizhu.user.UserProperties",
+      "name": "user.id",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.game.doudizhu.user.UserProperties",
+      "name": "user.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.game.doudizhu.user.UserProperties",
+      "name": "user.roomid",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.game.doudizhu.user.UserProperties",
+      "name": "user.username",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
