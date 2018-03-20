@@ -17,8 +17,8 @@ public class UserContro {
     @PostMapping(value = "/login")
     public Map login(@RequestParam("username") Integer username,@RequestParam("password") String password){
         Map params = new HashMap();
-        System.out.println(username+','+password);
-        if(userRepository.findByUsername(username).getUsername() == null){
+        System.out.println(username+ "》》》" +password);
+        if(userRepository.findByUsername(username) == null){
             params.put("status",0);
             params.put("message","this username isn't exist");
         }else if(!userRepository.findByUsername(username).getPassword().equals(password)){
