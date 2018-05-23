@@ -37,7 +37,7 @@ public class UserContro {
     public Map register(@RequestParam("username") Integer username,@RequestParam("password") String password,@RequestParam("repassword") String repassword){
         Map params = new HashMap();
 
-        if (userRepository.findByUsername(username).getUsername()!= null){
+        if (userRepository.findByUsername(username) != null){
             params.put("status",0);
             params.put("message","this username is used!");
         }else{
@@ -49,7 +49,7 @@ public class UserContro {
                 user.setRoomid(0);
                 userRepository.save(user);
             }
-            if(userRepository.findByUsername(username).getUsername()!=null){
+            if(userRepository.findByUsername(username) !=null){
                 params.put("status",1);
                 params.put("message","regieter success");
             }else{
